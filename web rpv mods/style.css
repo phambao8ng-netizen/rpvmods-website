@@ -108,3 +108,38 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}
 .showcase-gold .service-price strong,.showcase-gold .service-card-btn:hover{color:#ffd27d}
 @media (max-width: 1000px){.service-grid-showcase{grid-template-columns:1fr}.service-showcase-card{min-height:unset}.service-showcase-card p{min-height:0}.service-showcase-icon{margin-top:18px}}
 @media (max-width: 650px){.service-showcase-card{padding:20px 20px 24px;border-radius:22px}.service-showcase-head{gap:10px;flex-wrap:wrap}.service-type{font-size:12px;letter-spacing:1.6px}.service-showcase-icon{width:96px;height:96px;font-size:50px;margin:10px auto 22px}.service-showcase-card h3{font-size:34px}.service-showcase-card p{font-size:15px}.service-price strong{font-size:34px}.service-card-btn{font-size:16px;min-height:50px}}
+
+/* RPV MODS - Projects & Cam Ket */
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.commitment-grid .feature-card {
+  min-height: 140px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #4c286d;
+  background: #14101e;
+}
+
+.commitment-grid .feature-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #c084fc;
+}
+
+.commitment-grid .feature-card p {
+  font-size: 12px;
+  min-height: 0;
+  margin: 0;
+  color: #a5a1b5;
+}
+
+@media (max-width: 600px) {
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+}
