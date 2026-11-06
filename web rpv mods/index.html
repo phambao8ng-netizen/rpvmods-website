@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090e" />
+  <meta name="description" content="RPV MODS — không gian dịch vụ gaming, tối ưu máy tính và giải pháp cộng đồng." />
+  <title>RPV MODS | Gaming & Technology</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="RPV MODS - trang chủ">
+        <img src="assets/rpvmods.png" alt="Logo RPV MODS" class="brand-mark" />
+        <span class="brand-name" data-brand>RPV MODS</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Menu chính">
+        <a href="#home" class="nav-link active" data-nav="home" data-i18n="navHome">Trang Chủ</a>
+        <a href="#services" class="nav-link" data-nav="services" data-i18n="navServices">Dịch Vụ</a>
+        <a href="#pricing" class="nav-link" data-nav="pricing" data-i18n="navPricing">Bảng Giá</a>
+        <a href="#projects" class="nav-link" data-nav="projects" data-i18n="navProjects">Dự Án</a>
+        <a href="#about" class="nav-link" data-nav="about" data-i18n="navAbout">Info</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-toggle" id="languageToggle" role="group" aria-label="Chọn ngôn ngữ"><button type="button" class="lang-badge" data-lang-choice="vi" aria-label="Tiếng Việt">VI</button><button type="button" data-lang-choice="en" aria-label="English">EN</button></div>
+        <a class="btn btn-primary btn-header" href="https://discord.gg/rpvmods" target="_blank" rel="noopener noreferrer" data-discord><svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.8 5.1a18.5 18.5 0 0 0-4.6-1.4l-.6 1.2a17 17 0 0 0-5.2 0l-.6-1.2a18.3 18.3 0 0 0-4.6 1.4C1.3 9.3.5 13.3.9 17.2A18.5 18.5 0 0 0 6.5 20l1.2-1.9c-.7-.3-1.3-.6-1.9-.9l.5-.4a13.3 13.3 0 0 0 11.4 0l.5.4c-.6.3-1.2.6-1.9.9l1.2 1.9a18.5 18.5 0 0 0 5.6-2.8c.6-4.5-1-8.5-3.3-12.1ZM8.4 14.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7.2 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg><span>Discord</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Menu điện thoại" hidden>
+      <a href="#home" data-i18n="navHome">Trang Chủ</a><a href="#services" data-i18n="navServices">Dịch Vụ</a><a href="#pricing" data-i18n="navPricing">Bảng Giá</a><a href="#projects" data-i18n="navProjects">Dự Án</a><a href="#about" data-i18n="navAbout">Info</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">GAMING • TECHNOLOGY • COMMUNITY</span></div>
+        <h1 id="hero-title"><span data-i18n="heroLine1">CHÀO MỪNG</span><br /><span data-i18n="heroLine2">ĐẾN VỚI</span> <span class="gold-text" data-brand>RPV MODS</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Chào mừng bạn đến với RPV MODS — nơi cung cấp giải pháp công nghệ và dịch vụ gaming chuyên sâu. Chúng tôi hỗ trợ tối ưu máy tính, xây dựng cộng đồng Discord, thiết kế nhận diện và phát triển bot theo nhu cầu.</p>
+        <div class="hero-buttons"><a class="btn btn-primary btn-large" href="https://discord.gg/rpvmods" target="_blank" rel="noopener noreferrer" data-discord><svg class="discord-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.8 5.1a18.5 18.5 0 0 0-4.6-1.4l-.6 1.2a17 17 0 0 0-5.2 0l-.6-1.2a18.3 18.3 0 0 0-4.6 1.4C1.3 9.3.5 13.3.9 17.2A18.5 18.5 0 0 0 6.5 20l1.2-1.9c-.7-.3-1.3-.6-1.9-.9l.5-.4a13.3 13.3 0 0 0 11.4 0l.5.4c-.6.3-1.2.6-1.9.9l1.2 1.9a18.5 18.5 0 0 0 5.6-2.8c.6-4.5-1-8.5-3.3-12.1ZM8.4 14.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7.2 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg><span data-i18n="joinDiscord">Tham gia Discord</span></a><a class="btn btn-ghost btn-large" href="#services"><span data-i18n="explore">Khám phá dịch vụ</span><span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span><span class="meta-line"></span><span data-i18n="metaText">Dành cho cộng đồng game thủ Việt Nam</span></span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Biểu tượng RPV MODS"><div class="hero-art-glow"></div><img src="assets/rpvmods.png" alt="Biểu tượng gaming RPV MODS cách điệu" /><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div></div>
+      <a class="scroll-cue" href="#services"><span data-i18n="scroll">CUỘN ĐỂ KHÁM PHÁ</span><span class="scroll-track"><span></span></span></a>
+    </section>
+
+    <section class="section services-section" id="services"><div class="container"><div class="section-heading reveal"><div><span class="section-kicker" data-i18n="servicesKicker">GIẢI PHÁP CỦA CHÚNG TÔI</span><h2 data-i18n="servicesTitle">DỊCH VỤ <span class="gold-text">NỔI BẬT</span></h2></div><p data-i18n="servicesSub">Mọi thứ bạn cần để nâng cấp trải nghiệm gaming và cộng đồng.</p></div>
+      <div class="service-grid service-grid-showcase">
+        <article class="service-showcase-card showcase-pink reveal">
+          <div class="service-showcase-head"><span class="service-badge" data-i18n="service1Badge">NỔI BẬT</span><span class="service-type" data-i18n="service1Type">CUSTOM DISCORD</span></div>
+          <div class="service-showcase-icon">💬</div>
+          <h3 data-i18n="service1Title">Custom Discord</h3>
+          <p data-i18n="service1Desc">Thiết kế server Discord theo yêu cầu: hệ thống kênh, role, bảo mật, ticket, cửa hàng và bot tiện ích.</p>
+          <div class="service-tags"><span data-i18n="service1Tag1">Role & Bot</span><span data-i18n="service1Tag2">Ticket Shop</span><span data-i18n="service1Tag3">Branding</span></div>
+          <div class="service-price"><span class="service-price-label">VNĐ</span> <strong data-i18n="service1Price">150k - 500k</strong> <span class="service-price-note" data-i18n="servicePriceNote">tùy gói dịch vụ</span></div>
+          <a href="#contact" class="service-card-btn"><span data-i18n="serviceCardBtn">Liên Hệ Ngay</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-showcase-card showcase-cyan reveal">
+          <div class="service-showcase-head"><span class="service-badge" data-i18n="service2Badge">THỊNH HÀNH</span><span class="service-type" data-i18n="service2Type">SETUP DISCORD</span></div>
+          <div class="service-showcase-icon">🛠️</div>
+          <h3 data-i18n="service2Title">Setup Discord</h3>
+          <p data-i18n="service2Desc">Setup server Discord từ đầu: channel, role, welcome, verify, ticket và bố cục gọn gàng dễ sử dụng.</p>
+          <div class="service-tags"><span data-i18n="service2Tag1">Welcome</span><span data-i18n="service2Tag2">Verify</span><span data-i18n="service2Tag3">Ticket</span></div>
+          <div class="service-price"><span class="service-price-label">VNĐ</span> <strong data-i18n="service2Price">50k - 200k</strong> <span class="service-price-note" data-i18n="servicePriceNote">tùy gói dịch vụ</span></div>
+          <a href="#contact" class="service-card-btn"><span data-i18n="serviceCardBtn">Liên Hệ Ngay</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-showcase-card showcase-violet reveal">
+          <div class="service-showcase-head"><span class="service-badge" data-i18n="service3Badge">HOT</span><span class="service-type" data-i18n="service3Type">SOCIAL MEDIA</span></div>
+          <div class="service-showcase-icon">📣</div>
+          <h3 data-i18n="service3Title">Dịch vụ Mạng xã hội</h3>
+          <p data-i18n="service3Desc">Hỗ trợ nội dung, thiết kế và phát triển Facebook, TikTok, Instagram, tăng độ nhận diện thương hiệu.</p>
+          <div class="service-tags"><span data-i18n="service3Tag1">Facebook</span><span data-i18n="service3Tag2">TikTok</span><span data-i18n="service3Tag3">Content</span></div>
+          <div class="service-price"><span class="service-price-label">VNĐ</span> <strong data-i18n="service3Price">80k - 350k</strong> <span class="service-price-note" data-i18n="servicePriceNote">tùy gói dịch vụ</span></div>
+          <a href="#contact" class="service-card-btn"><span data-i18n="serviceCardBtn">Liên Hệ Ngay</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-showcase-card showcase-gold reveal">
+          <div class="service-showcase-head"><span class="service-badge" data-i18n="service4Badge">HIỆU NĂNG</span><span class="service-type" data-i18n="service4Type">PC OPTIMIZATION</span></div>
+          <div class="service-showcase-icon">⚡</div>
+          <h3 data-i18n="service4Title">Tối ưu máy tính</h3>
+          <p data-i18n="service4Desc">Tối ưu Windows cho chơi game và làm việc: dọn rác, giảm nền, boost FPS, giảm input lag và tăng độ ổn định.</p>
+          <div class="service-tags"><span data-i18n="service4Tag1">FPS Boost</span><span data-i18n="service4Tag2">Clean System</span><span data-i18n="service4Tag3">Gaming</span></div>
+          <div class="service-price"><span class="service-price-label">VNĐ</span> <strong data-i18n="service4Price">100k - 300k</strong> <span class="service-price-note" data-i18n="servicePriceNote">tùy gói dịch vụ</span></div>
+          <a href="#contact" class="service-card-btn"><span data-i18n="serviceCardBtn">Liên Hệ Ngay</span> <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div></section>
+
+    <section class="section pricing-section" id="pricing"><div class="container"><div class="section-heading centered reveal"><span class="section-kicker" data-i18n="pricingKicker">GÓI DỊCH VỤ</span><h2 data-i18n="pricingTitle">BẢNG <span class="gold-text">GIÁ</span></h2><p data-i18n="pricingSub">Giá và nội dung dưới đây là dữ liệu mẫu, hãy thay bằng thông tin thực tế của bạn.</p></div>
+      <div class="pricing-grid">
+        <article class="price-card reveal"><div class="plan-name">STARTER</div><h3 data-i18n="plan1Name">Cơ bản</h3><p data-i18n="plan1Desc">Dành cho nhu cầu nhỏ</p><div class="price" data-i18n="contactPrice">Liên hệ</div><ul><li data-i18n="plan1F1">Tư vấn nhu cầu</li><li data-i18n="plan1F2">Thiết lập cơ bản</li><li data-i18n="plan1F3">Hỗ trợ qua Discord</li></ul><a class="btn btn-outline plan-btn" href="#contact" data-i18n="requestQuote">Nhận báo giá ↗</a></article>
+        <article class="price-card featured reveal"><div class="popular-tag" data-i18n="popular">PHỔ BIẾN</div><div class="plan-name">PRO</div><h3 data-i18n="plan2Name">Nâng cao</h3><p data-i18n="plan2Desc">Dành cho game thủ và cộng đồng</p><div class="price" data-i18n="contactPrice">Liên hệ</div><ul><li data-i18n="plan2F1">Tư vấn theo yêu cầu</li><li data-i18n="plan2F2">Tùy chỉnh chuyên sâu</li><li data-i18n="plan2F3">Hướng dẫn sử dụng</li></ul><a class="btn btn-gold plan-btn" href="#contact" data-i18n="requestQuote">Nhận báo giá ↗</a></article>
+        <article class="price-card reveal"><div class="plan-name">CUSTOM</div><h3 data-i18n="plan3Name">Theo yêu cầu</h3><p data-i18n="plan3Desc">Giải pháp riêng cho dự án của bạn</p><div class="price" data-i18n="contactPrice">Liên hệ</div><ul><li data-i18n="plan3F1">Phạm vi tùy chỉnh</li><li data-i18n="plan3F2">Thiết kế theo thương hiệu</li><li data-i18n="plan3F3">Thỏa thuận hỗ trợ</li></ul><a class="btn btn-outline plan-btn" href="#contact" data-i18n="requestQuote">Nhận báo giá ↗</a></article>
+      </div>
+    </div></section>
+
+    <section class="section projects-section" id="projects"><div class="container"><div class="section-heading reveal"><div><span class="section-kicker" data-i18n="projectKicker">TRƯNG BÀY MẪU</span><h2 data-i18n="projectTitle">DỰ ÁN <span class="gold-text">TIÊU BIỂU</span></h2></div><p data-i18n="projectSub">Các thẻ bên dưới là dự án minh họa. Thay nội dung bằng sản phẩm thực tế của bạn.</p></div><div class="project-grid"><article class="project-card reveal"><div class="project-visual visual-1"><span>EF<span class="gold-text">//</span> DESIGN</span></div><div class="project-info"><div><small>BRANDING / DEMO</small><h3 data-i18n="project1">Bộ nhận diện Gaming</h3></div><span class="project-arrow">↗</span></div></article><article class="project-card reveal"><div class="project-visual visual-2"><span>BOT<span class="gold-text">.CORE</span></span></div><div class="project-info"><div><small>DISCORD / DEMO</small><h3 data-i18n="project2">Bot quản lý cộng đồng</h3></div><span class="project-arrow">↗</span></div></article><article class="project-card reveal"><div class="project-visual visual-3"><span>PC <span class="gold-text">BOOST</span></span></div><div class="project-info"><div><small>WINDOWS / DEMO</small><h3 data-i18n="project3">Bộ công cụ tối ưu PC</h3></div><span class="project-arrow">↗</span></div></article></div></div></section>
+
+    <section class="section about-section" id="about"><div class="container about-layout"><div class="about-emblem reveal"><img src="assets/rpvmods.png" alt="Logo RPV MODS" /></div><div class="about-content reveal"><span class="section-kicker" data-i18n="aboutKicker">VỀ CHÚNG TÔI</span><h2 data-i18n="aboutTitle">ĐAM MÊ <span class="gold-text">CÔNG NGHỆ</span><br />KẾT NỐI GAME THỦ</h2><p data-i18n="aboutText">RPV MODS là thương hiệu mẫu dành cho cộng đồng yêu công nghệ và gaming. Website này được thiết kế để bạn dễ dàng thay tên thương hiệu, nội dung, dịch vụ và đường dẫn cộng đồng theo nhu cầu.</p><a href="#contact" class="btn btn-outline" data-i18n="contactNow">Liên hệ ngay ↗</a></div></div></section>
+
+    <section class="section contact-section" id="contact"><div class="container"><div class="contact-panel reveal"><div><span class="section-kicker" data-i18n="contactKicker">KẾT NỐI VỚI CHÚNG TÔI</span><h2 data-i18n="contactTitle">SẴN SÀNG <span class="gold-text">BẮT ĐẦU?</span></h2><p data-i18n="contactDesc">Liên hệ qua Discord hoặc email để trao đổi về nhu cầu của bạn.</p></div><div class="contact-actions"><a href="https://discord.gg/rpvmods" target="_blank" rel="noopener noreferrer" data-discord class="btn btn-primary btn-large"><span data-i18n="joinDiscord">Tham gia Discord</span> ↗</a><a href="mailto:Phambao8ng@Gmail.com?subject=RPV%20MODS" id="emailLink" class="btn btn-outline btn-large"><span data-i18n="sendEmail">Gửi email</span> ↗</a></div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-content"><a class="footer-brand" href="#home"><img src="assets/rpvmods.png" alt="" /><strong data-brand>RPV MODS</strong></a><p>© <span id="year"></span> <span data-brand>RPV MODS</span>. <span data-i18n="copyright">All rights reserved.</span></p><a href="#top" class="back-top" data-i18n="backTop">Về đầu trang ↑</a></div></footer>
+
+  <button type="button" class="settings-button" id="settingsToggle" aria-label="Tùy chỉnh hiệu ứng" aria-expanded="false" aria-controls="settingsPanel">⚙</button>
+  <aside class="settings-panel" id="settingsPanel" hidden><strong data-i18n="settingsTitle">Tùy chỉnh hiển thị</strong><label class="setting-row"><span data-i18n="particlesSetting">Hiệu ứng hạt</span><input type="checkbox" id="particlesToggle" checked /></label><p data-i18n="settingsNote">Cài đặt chỉ lưu trên trình duyệt này.</p></aside>
+  <div class="music-widget" aria-label="Trình phát nhạc nền">
+    <button type="button" id="musicToggle" class="music-toggle" aria-label="Bật nhạc" aria-pressed="false" title="Bật / tắt nhạc">♫</button>
+    <button type="button" id="musicLabel" class="music-label" data-i18n="musicOff" aria-label="Bật hoặc tắt nhạc">Bật nhạc</button>
+    <input type="range" id="musicVolume" aria-label="Âm lượng" title="Âm lượng" min="0" max="100" value="35" />
+    <audio id="backgroundMusic" src="assets/background-music.mp3" preload="none" loop></audio>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
